@@ -1,0 +1,29 @@
+.products .item{
+    float: left;
+}
+
+@media screen and (max-width: 1080px){
+    .products .item:nth-child(4n + 1){
+        clear: none;
+    }  
+    
+    .products .item:nth-child(3n + 1){
+        clear: both;
+    }  
+}
+
+@media screen and (max-width: 780px){
+    .products .item:nth-child(3n + 1){
+        clear: none;
+    }  
+    
+    .products .item:nth-child(2n + 1){
+        clear: both;
+    }  
+}
+
+@media screen and (max-width: 480px){
+    .products .item{
+        float: none;
+    }
+}
